@@ -1,0 +1,488 @@
+============================================================
+ESCENARIO 1
+============================================================
+Estado inicial:
+. . . P .
+. X . . .
+A . . X P
+. . P . .
+. X . . .
+Posicion: (2, 0) | Puntuacion: 0
+
+Accion #1: ARRIBA -> movido | Posicion: (1, 0) | Puntuacion: -1
+. . . P .
+A X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #2: ARRIBA -> movido | Posicion: (0, 0) | Puntuacion: -2
+A . . P .
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #3: DERECHA -> movido | Posicion: (0, 1) | Puntuacion: -3
+. A . P .
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #4: DERECHA -> movido | Posicion: (0, 2) | Puntuacion: -4
+. . A P .
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #5: DERECHA -> movido | Posicion: (0, 3) | Puntuacion: -5
+. . . A .
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #6: RECOGER -> paquete_recogido | Posicion: (0, 3) | Puntuacion: 5
+. . . A .
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #7: DERECHA -> movido | Posicion: (0, 4) | Puntuacion: 4
+. . . . A
+. X . . .
+. . . X P
+. . P . .
+. X . . .
+
+Accion #8: ABAJO -> movido | Posicion: (1, 4) | Puntuacion: 3
+. . . . .
+. X . . A
+. . . X P
+. . P . .
+. X . . .
+
+Accion #9: ABAJO -> movido | Posicion: (2, 4) | Puntuacion: 2
+. . . . .
+. X . . .
+. . . X A
+. . P . .
+. X . . .
+
+Accion #10: RECOGER -> paquete_recogido | Posicion: (2, 4) | Puntuacion: 12
+. . . . .
+. X . . .
+. . . X A
+. . P . .
+. X . . .
+
+Accion #11: ABAJO -> movido | Posicion: (3, 4) | Puntuacion: 11
+. . . . .
+. X . . .
+. . . X .
+. . P . A
+. X . . .
+
+Accion #12: ABAJO -> movido | Posicion: (4, 4) | Puntuacion: 10
+. . . . .
+. X . . .
+. . . X .
+. . P . .
+. X . . A
+
+Accion #13: IZQUIERDA -> movido | Posicion: (4, 3) | Puntuacion: 9
+. . . . .
+. X . . .
+. . . X .
+. . P . .
+. X . A .
+
+Accion #14: ARRIBA -> movido | Posicion: (3, 3) | Puntuacion: 8
+. . . . .
+. X . . .
+. . . X .
+. . P A .
+. X . . .
+
+Accion #15: IZQUIERDA -> movido | Posicion: (3, 2) | Puntuacion: 7
+. . . . .
+. X . . .
+. . . X .
+. . A . .
+. X . . .
+
+Accion #16: RECOGER -> paquete_recogido | Posicion: (3, 2) | Puntuacion: 37
+. . . . .
+. X . . .
+. . . X .
+. . A . .
+. X . . .
+
+Todos los paquetes fueron recolectados en 16 acciones.
+RESULTADO FINAL -> Paquetes: 3/3 | Movimientos: 13 | Penalizaciones: 0 | Puntuacion final: 37
+============================================================
+ESCENARIO 2
+============================================================
+Estado inicial:
+P . X . .
+. . X . P
+. . A . .
+X . . . .
+P . X . .
+Posicion: (2, 2) | Puntuacion: 0
+
+Accion #1: DERECHA -> movido | Posicion: (2, 3) | Puntuacion: -1
+P . X . .
+. . X . P
+. . . A .
+X . . . .
+P . X . .
+
+Accion #2: ARRIBA -> movido | Posicion: (1, 3) | Puntuacion: -2
+P . X . .
+. . X A P
+. . . . .
+X . . . .
+P . X . .
+
+Accion #3: DERECHA -> movido | Posicion: (1, 4) | Puntuacion: -3
+P . X . .
+. . X . A
+. . . . .
+X . . . .
+P . X . .
+
+Accion #4: RECOGER -> paquete_recogido | Posicion: (1, 4) | Puntuacion: 7
+P . X . .
+. . X . A
+. . . . .
+X . . . .
+P . X . .
+
+Accion #5: ARRIBA -> movido | Posicion: (0, 4) | Puntuacion: 6
+P . X . A
+. . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #6: IZQUIERDA -> movido | Posicion: (0, 3) | Puntuacion: 5
+P . X A .
+. . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #7: ABAJO -> movido | Posicion: (1, 3) | Puntuacion: 4
+P . X . .
+. . X A .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #8: ABAJO -> movido | Posicion: (2, 3) | Puntuacion: 3
+P . X . .
+. . X . .
+. . . A .
+X . . . .
+P . X . .
+
+Accion #9: DERECHA -> movido | Posicion: (2, 4) | Puntuacion: 2
+P . X . .
+. . X . .
+. . . . A
+X . . . .
+P . X . .
+
+Accion #10: ABAJO -> movido | Posicion: (3, 4) | Puntuacion: 1
+P . X . .
+. . X . .
+. . . . .
+X . . . A
+P . X . .
+
+Accion #11: ABAJO -> movido | Posicion: (4, 4) | Puntuacion: 0
+P . X . .
+. . X . .
+. . . . .
+X . . . .
+P . X . A
+
+Accion #12: IZQUIERDA -> movido | Posicion: (4, 3) | Puntuacion: -1
+P . X . .
+. . X . .
+. . . . .
+X . . . .
+P . X A .
+
+Accion #13: ARRIBA -> movido | Posicion: (3, 3) | Puntuacion: -2
+P . X . .
+. . X . .
+. . . . .
+X . . A .
+P . X . .
+
+Accion #14: IZQUIERDA -> movido | Posicion: (3, 2) | Puntuacion: -3
+P . X . .
+. . X . .
+. . . . .
+X . A . .
+P . X . .
+
+Accion #15: IZQUIERDA -> movido | Posicion: (3, 1) | Puntuacion: -4
+P . X . .
+. . X . .
+. . . . .
+X A . . .
+P . X . .
+
+Accion #16: ARRIBA -> movido | Posicion: (2, 1) | Puntuacion: -5
+P . X . .
+. . X . .
+. A . . .
+X . . . .
+P . X . .
+
+Accion #17: ARRIBA -> movido | Posicion: (1, 1) | Puntuacion: -6
+P . X . .
+. A X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #18: ARRIBA -> movido | Posicion: (0, 1) | Puntuacion: -7
+P A X . .
+. . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #19: IZQUIERDA -> movido | Posicion: (0, 0) | Puntuacion: -8
+A . X . .
+. . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #20: RECOGER -> paquete_recogido | Posicion: (0, 0) | Puntuacion: 2
+A . X . .
+. . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #21: ABAJO -> movido | Posicion: (1, 0) | Puntuacion: 1
+. . X . .
+A . X . .
+. . . . .
+X . . . .
+P . X . .
+
+Accion #22: ABAJO -> movido | Posicion: (2, 0) | Puntuacion: 0
+. . X . .
+. . X . .
+A . . . .
+X . . . .
+P . X . .
+
+Accion #23: DERECHA -> movido | Posicion: (2, 1) | Puntuacion: -1
+. . X . .
+. . X . .
+. A . . .
+X . . . .
+P . X . .
+
+Accion #24: ABAJO -> movido | Posicion: (3, 1) | Puntuacion: -2
+. . X . .
+. . X . .
+. . . . .
+X A . . .
+P . X . .
+
+Accion #25: ABAJO -> movido | Posicion: (4, 1) | Puntuacion: -3
+. . X . .
+. . X . .
+. . . . .
+X . . . .
+P A X . .
+
+Accion #26: IZQUIERDA -> movido | Posicion: (4, 0) | Puntuacion: -4
+. . X . .
+. . X . .
+. . . . .
+X . . . .
+A . X . .
+
+Accion #27: RECOGER -> paquete_recogido | Posicion: (4, 0) | Puntuacion: 26
+. . X . .
+. . X . .
+. . . . .
+X . . . .
+A . X . .
+
+Todos los paquetes fueron recolectados en 27 acciones.
+RESULTADO FINAL -> Paquetes: 3/3 | Movimientos: 24 | Penalizaciones: 0 | Puntuacion final: 26
+============================================================
+ESCENARIO 3
+============================================================
+Estado inicial:
+. X . . P
+. X . X .
+. . A . .
+P X . X .
+. . . . P
+Posicion: (2, 2) | Puntuacion: 0
+
+Accion #1: ARRIBA -> movido | Posicion: (1, 2) | Puntuacion: -1
+. X . . P
+. X A X .
+. . . . .
+P X . X .
+. . . . P
+
+Accion #2: ARRIBA -> movido | Posicion: (0, 2) | Puntuacion: -2
+. X A . P
+. X . X .
+. . . . .
+P X . X .
+. . . . P
+
+Accion #3: DERECHA -> movido | Posicion: (0, 3) | Puntuacion: -3
+. X . A P
+. X . X .
+. . . . .
+P X . X .
+. . . . P
+
+Accion #4: DERECHA -> movido | Posicion: (0, 4) | Puntuacion: -4
+. X . . A
+. X . X .
+. . . . .
+P X . X .
+. . . . P
+
+Accion #5: RECOGER -> paquete_recogido | Posicion: (0, 4) | Puntuacion: 6
+. X . . A
+. X . X .
+. . . . .
+P X . X .
+. . . . P
+
+Accion #6: ABAJO -> movido | Posicion: (1, 4) | Puntuacion: 5
+. X . . .
+. X . X A
+. . . . .
+P X . X .
+. . . . P
+
+Accion #7: ABAJO -> movido | Posicion: (2, 4) | Puntuacion: 4
+. X . . .
+. X . X .
+. . . . A
+P X . X .
+. . . . P
+
+Accion #8: ABAJO -> movido | Posicion: (3, 4) | Puntuacion: 3
+. X . . .
+. X . X .
+. . . . .
+P X . X A
+. . . . P
+
+Accion #9: ABAJO -> movido | Posicion: (4, 4) | Puntuacion: 2
+. X . . .
+. X . X .
+. . . . .
+P X . X .
+. . . . A
+
+Accion #10: RECOGER -> paquete_recogido | Posicion: (4, 4) | Puntuacion: 12
+. X . . .
+. X . X .
+. . . . .
+P X . X .
+. . . . A
+
+Accion #11: IZQUIERDA -> movido | Posicion: (4, 3) | Puntuacion: 11
+. X . . .
+. X . X .
+. . . . .
+P X . X .
+. . . A .
+
+Accion #12: IZQUIERDA -> movido | Posicion: (4, 2) | Puntuacion: 10
+. X . . .
+. X . X .
+. . . . .
+P X . X .
+. . A . .
+
+Accion #13: ARRIBA -> movido | Posicion: (3, 2) | Puntuacion: 9
+. X . . .
+. X . X .
+. . . . .
+P X A X .
+. . . . .
+
+Accion #14: ARRIBA -> movido | Posicion: (2, 2) | Puntuacion: 8
+. X . . .
+. X . X .
+. . A . .
+P X . X .
+. . . . .
+
+Accion #15: DERECHA -> movido | Posicion: (2, 3) | Puntuacion: 7
+. X . . .
+. X . X .
+. . . A .
+P X . X .
+. . . . .
+
+Accion #16: IZQUIERDA -> movido | Posicion: (2, 2) | Puntuacion: 6
+. X . . .
+. X . X .
+. . A . .
+P X . X .
+. . . . .
+
+Accion #17: IZQUIERDA -> movido | Posicion: (2, 1) | Puntuacion: 5
+. X . . .
+. X . X .
+. A . . .
+P X . X .
+. . . . .
+
+Accion #18: IZQUIERDA -> movido | Posicion: (2, 0) | Puntuacion: 4
+. X . . .
+. X . X .
+A . . . .
+P X . X .
+. . . . .
+
+Accion #19: ABAJO -> movido | Posicion: (3, 0) | Puntuacion: 3
+. X . . .
+. X . X .
+. . . . .
+A X . X .
+. . . . .
+
+Accion #20: RECOGER -> paquete_recogido | Posicion: (3, 0) | Puntuacion: 33
+. X . . .
+. X . X .
+. . . . .
+A X . X .
+. . . . .
+
+Todos los paquetes fueron recolectados en 20 acciones.
+RESULTADO FINAL -> Paquetes: 3/3 | Movimientos: 17 | Penalizaciones: 0 | Puntuacion final: 33
+
+============================================================
+TABLA COMPARATIVA DE RESULTADOS
+============================================================
+Escenario   Paquetes    Movimientos   Penalizaciones  Puntuacion
+Escenario 1 3/3         13            0               37
+Escenario 2 3/3         24            0               26
+Escenario 3 3/3         17            0               33
